@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dilla Was Glowing</title>
+    <title>Box Model</title>
     <style>
-      /* Reset */
+      /* CSS Reset */
       /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,173 +136,201 @@
         border-collapse: collapse;
         border-spacing: 0;
       }
-      /* Reset End */
+      /* CSS Reset */
 
-      /* CSS */
-
+      /* My Style */
       body {
+        font-size: 16px;
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        background-color: grey;
+        color: #333;
         background-image: url(img/stardust.png);
       }
 
       .container {
-        width: 800px;
+        width: 960px;
         margin: auto;
-        background-color: grey;
+        background-color: whitesmoke;
       }
 
       .header {
         padding: 20px;
+      }
+
+      .header .judul {
         text-align: center;
+        font-weight: 700;
+        font-size: 40px;
       }
 
       .header .navbar {
-        margin-top: 30px;
+        display: inline-block;
+        margin-top: 20px;
+        text-transform: capitalize;
       }
 
       .header .navbar a {
-        margin: 0 100px;
         text-decoration: none;
-        color: white;
+        color: #333;
+        margin: 0 70px;
       }
 
       .header .navbar a:hover {
-        color: orange;
+        color: purple;
       }
 
       .hero {
-        height: 700px;
-        background-image: url(img/sigung.PNG);
+        height: 400px;
         background-size: cover;
-        border-top: 5px solid gray;
-        border-bottom: 5px solid gray;
+        background-position: 0 -280px;
+        background-image: url(img/main.png);
+        border-top: 5px solid purple;
+        border-bottom: 5px solid purple;
       }
 
-      .content .title {
-        font-size: 30px;
-        font-weight: 700px;
+      .main {
+        padding: 15px;
+        width: 600px;
+        box-sizing: border-box;
+        float: left;
+      }
+
+      .main h2 {
+        font-size: 28px;
+        font-weight: 400;
+      }
+
+      .main .author {
+        font-size: 14px;
         margin-top: 5px;
+      }
+
+      .main .author a {
+        text-decoration: none;
+        color: black;
         font-weight: 700;
-        text-transform: uppercase;
-
-        color: white;
+      }
+      .main p {
+        text-align: justify;
+        margin-bottom: 15px;
       }
 
-      .content .penulis {
-        margin-top: 5px;
+      .sidebar {
+        width: 300px;
+        float: right;
+        padding: 20px;
+      }
+
+      .sidebar img {
+        float: left;
+        padding-right: 8px;
+      }
+
+      .sidebar h3 {
+        font-weight: 700;
+        color: #333;
         margin-bottom: 10px;
       }
 
-      .content .penulis a {
-        text-decoration: none;
-        color: whitesmoke;
-        font-weight: 500;
-      }
-
-      .content p {
-        font-size: 14px;
-        text-align: justify;
-        word-spacing: 1px;
-      }
-
-      .footer {
-        background-color: orange;
-        margin-top: 5px;
-        padding: 8px;
+      .sidebar p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
       }
 
       .footer .copyright {
-        font-size: 16px;
         text-align: center;
+        background-color: grey;
+        color: whitesmoke;
+        padding: 8px;
       }
 
-      /* CSS End*/
+      /* Clear */
+      .cf:before,
+      .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+
+      .cf:after {
+        clear: both;
+      }
+
+      /**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+      .cf {
+        *zoom: 1;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h1 class="judul">Dilla WAS Glowing</h1>
+        <h1 class="judul">MyWebsite</h1>
         <div class="navbar">
-          <a href="#">Home</a>
-          <a href="#">Work</a>
-          <a href="#">Contact</a>
+          <a href="#">home</a>
+          <a href="#">work</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+        </div>
+      </div>
+      <div class="hero"></div>
+      <div class="content cf">
+        <div class="main">
+          <h2>Judul Artikel</h2>
+          <p class="author">
+            Ditulis oleh <a href="#">Reza Kurniawan</a>, Pada 16 Februari 2023
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            architecto, ea corrupti ut deserunt cumque rerum corporis itaque
+            facilis. Temporibus magni, fugiat adipisci eius consequuntur autem
+            ex repellat sed obcaecati!
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+            alias, quidem quisquam hic, voluptatem reiciendis eaque doloribus
+            quis porro quibusdam, rerum nihil maxime modi laudantium numquam.
+            Veniam, amet. Magni nostrum possimus consectetur odio eius eaque
+            consequatur nisi suscipit itaque! Animi, perspiciatis ut consectetur
+            mollitia saepe omnis perferendis quae voluptatibus rerum suscipit
+            voluptas commodi? Similique itaque rerum sequi minus in accusantium
+            rem minima, expedita quam voluptas esse dicta illo! Aliquid fuga,
+            mollitia dolore atque neque sapiente fugiat alias inventore est
+            quaerat adipisci tenetur maiores ratione, eum id, et suscipit itaque
+            qui impedit ipsum laborum animi culpa! Mollitia exercitationem
+            aperiam ab qui!
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+            impedit distinctio? Nisi ipsa ullam quod quis deserunt aspernatur
+            soluta repellendus aliquam. Sed nesciunt est eum, rerum soluta
+            officiis dolor doloremque quam corporis molestiae dignissimos iste
+            laborum, possimus officia debitis enim eligendi illo nostrum quae!
+            Obcaecati, quisquam maiores velit atque debitis ratione illo
+            recusandae illum. Aut odio suscipit iusto consequuntur dignissimos
+            dolor ullam. Minima, repellendus quam quos dolor corrupti odit
+            tempore laudantium. Delectus perferendis nesciunt magnam, non
+            possimus est blanditiis mollitia.
+          </p>
+        </div>
+        <div class="sidebar cf">
+          <h3>Tentang Penulis</h3>
+          <img src="img/main.png" alt="main" width="100px" height="100px" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magni
+            quam nulla incidunt esse quo a facilis itaque ea quod?
+          </p>
         </div>
       </div>
 
-      <div class="hero"></div>
-
-      <div class="content">
-        <h1 class="title">Sigung brot brot</h1>
-        <p class="penulis">
-          Ditulis Oleh <a href="#">Reza Kurniawan</a>, Pada Tanggal 21 Agustus
-          2022
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          tempora quisquam id assumenda porro, aut, rem modi pariatur
-          accusantium, magni perspiciatis autem dolores. Distinctio mollitia
-          possimus quasi tempore dolorum placeat blanditiis assumenda eligendi
-          quia, molestiae expedita quo repellat voluptates. Eaque ad alias
-          aspernatur exercitationem excepturi? Quo vel sunt nemo, fugit,
-          consectetur minus dolorum nulla eum tenetur saepe assumenda? Sunt
-          ipsam dolores quam iure nobis at assumenda modi natus, tenetur
-          cupiditate soluta consequuntur tempore atque explicabo vel adipisci
-          ex, reprehenderit a! Nesciunt laborum, quae nihil dicta est nobis
-          iusto error? Fugit voluptatum quidem tenetur iure quisquam provident
-          similique eaque esse pariatur temporibus excepturi amet numquam
-          dolorem minus sint quod ipsa, nulla nesciunt id fuga mollitia. Esse
-          vitae ut blanditiis quos iste, amet in harum, assumenda nihil rem
-          soluta temporibus sit nobis nemo odit neque aliquid recusandae nulla a
-          aperiam? Dolor quidem, earum, natus aspernatur tempore quo aliquam
-          magnam ipsum suscipit, magni perspiciatis voluptate ipsa odit
-          doloribus modi atque beatae asperiores debitis! Odit quo itaque eius.
-          Facilis mollitia assumenda dicta officiis corrupti voluptatibus quidem
-          esse quo laudantium ipsam culpa nam dolorum aliquam deleniti cumque
-          consequuntur vero repudiandae, rem beatae ad? Pariatur quo nostrum
-          porro sequi quos repellendus accusantium odio atque ab debitis natus
-          modi, autem voluptatem eius aspernatur quis, voluptates deserunt quas
-          minus. Obcaecati provident ab aut esse repellat eaque officiis minus?
-          Minus, alias deleniti aliquam tempora, nesciunt esse voluptas, facere
-          nihil dolorem explicabo ad rerum rem? Eaque, distinctio voluptatem
-          nostrum error, illo iusto, odio provident voluptas facilis iste
-          aliquid asperiores dicta inventore laboriosam. Doloremque optio culpa
-          repellat nulla. Quia aspernatur nisi dicta aliquam corrupti
-          repellendus laborum, nostrum vel iure, vitae natus necessitatibus in
-          aperiam recusandae beatae id laboriosam eaque sint assumenda, nobis
-          dignissimos est tempore? Sunt, quia at. Aperiam ea repudiandae quos
-          quasi aut mollitia tempore quisquam, adipisci, pariatur optio fuga,
-          porro voluptatum inventore ratione neque eius rerum incidunt? Deserunt
-          beatae qui, ducimus recusandae at itaque fuga sit vel veniam assumenda
-          molestias quod voluptatem dolor atque sunt autem harum iure laudantium
-          tenetur inventore? Accusamus voluptate, enim necessitatibus facere
-          error repellendus numquam dolores pariatur maxime ipsum ipsam
-          molestias soluta vitae, quo rem maiores sint est laborum quas? Quod
-          aut, non amet laudantium in architecto accusamus sint minima. Eveniet
-          porro minima, quisquam necessitatibus omnis cum fugiat doloribus
-          molestiae molestias modi quae velit illo neque quaerat id alias ea vel
-          earum in iusto incidunt. Ut, inventore tempore officia reiciendis
-          cupiditate dolorum magnam ratione perspiciatis voluptates! Veniam iure
-          numquam perferendis hic porro, laborum vel aspernatur veritatis
-          officia voluptate unde ipsa distinctio corrupti ad rerum provident eos
-          nisi nesciunt suscipit! In ad optio illo esse harum non nemo?
-          Repellendus earum soluta illum quae consectetur, commodi eaque
-          exercitationem necessitatibus. Odit ea odio tenetur quibusdam neque
-          eligendi omnis consequuntur exercitationem. Voluptatem quam dolorum
-          magni expedita, et esse saepe adipisci iure voluptas corporis tempora.
-          Animi accusantium iste voluptatem expedita porro dolore nisi sint
-          ipsum. Voluptatem odit nisi suscipit accusantium eos? Quae totam quia
-          ex molestiae deserunt quo alias, deleniti commodi libero, possimus
-          repellat eveniet animi, consequuntur voluptate dolores corrupti?
-        </p>
-        <p></p>
-        <p></p>
-      </div>
-
       <div class="footer">
-        <p class="copyright">@Copyright Sigung Brot Brot 2023</p>
+        <p class="copyright">Copyright 2023 Reza Kurniawan,S.T</p>
       </div>
     </div>
   </body>
