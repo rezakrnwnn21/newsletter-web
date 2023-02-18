@@ -147,36 +147,63 @@
         background-image: url(img/stardust.png);
       }
 
-      .container {
-        width: 960px;
-        margin: auto;
-        background-color: whitesmoke;
+      .top-bar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: gray;
+        border-bottom: 3px solid gray;
+        z-index: 9999;
       }
 
-      .header {
-        padding: 20px;
-      }
-
-      .header .judul {
-        text-align: center;
-        font-weight: 700;
-        font-size: 40px;
-      }
-
-      .header .navbar {
+      .top-bar .navbar {
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 15px;
         text-transform: capitalize;
       }
 
-      .header .navbar a {
+      .top-bar .navbar a {
         text-decoration: none;
         color: #333;
-        margin: 0 70px;
+        margin: 0 150px;
       }
 
-      .header .navbar a:hover {
+      .top-bar .navbar a:hover {
         color: purple;
+      }
+
+      .container {
+        width: 960px;
+        margin: 30px auto;
+        background-color: whitesmoke;
+        position: relative;
+      }
+
+      .linkedin {
+        width: 50px;
+        height: 50px;
+        background-image: url(img/linkedinn.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        text-indent: -9999px;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+      }
+
+      .header {
+        margin-top: 60px;
+        padding: 30px;
+      }
+
+      .header .judul {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
       }
 
       .hero {
@@ -266,17 +293,27 @@
     </style>
   </head>
   <body>
+    <div class="top-bar">
+      <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">work</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </div>
+    </div>
+
     <div class="container">
+      <a
+        href="https://www.linkedin.com/in/rezakrn21/"
+        class="linkedin"
+        target="_blank"
+        >Twitter</a
+      >
       <div class="header">
         <h1 class="judul">MyWebsite</h1>
-        <div class="navbar">
-          <a href="#">home</a>
-          <a href="#">work</a>
-          <a href="#">about</a>
-          <a href="#">contact</a>
-        </div>
       </div>
       <div class="hero"></div>
+
       <div class="content cf">
         <div class="main">
           <h2>Judul Artikel</h2>
