@@ -148,7 +148,7 @@
       }
 
       .container {
-        width: 960px;
+        width: 800px;
         margin: auto;
         background-color: whitesmoke;
       }
@@ -172,7 +172,7 @@
       .header .navbar a {
         text-decoration: none;
         color: #333;
-        margin: 0 90px;
+        margin: 0 70px;
       }
 
       .header .navbar a:hover {
@@ -180,62 +180,36 @@
       }
 
       .hero {
-        height: 400px;
+        height: 300px;
         background-size: cover;
-        background-position: 0 -280px;
-        background-image: url(img/developer.jpg);
-        border-top: 5px solid gray;
-        border-bottom: 5px solid gray;
+        background-position: 0 -250px;
+        background-image: url(img/main.png);
+        border-top: 5px solid purple;
+        border-bottom: 5px solid purple;
       }
 
-      .main {
+      .content {
         padding: 15px;
-        width: 600px;
-        box-sizing: border-box;
-        float: left;
       }
 
-      .main h2 {
+      .content h2 {
         font-size: 28px;
         font-weight: 400;
       }
 
-      .main .author {
+      .content .author {
         font-size: 14px;
         margin-top: 5px;
       }
 
-      .main .author a {
+      .content .author a {
         text-decoration: none;
         color: black;
         font-weight: 700;
       }
-      .main p {
+      .content p {
         text-align: justify;
         margin-bottom: 15px;
-      }
-
-      .sidebar {
-        width: 300px;
-        float: right;
-        padding: 20px;
-      }
-
-      .sidebar img {
-        float: left;
-        padding-right: 8px;
-      }
-
-      .sidebar h3 {
-        font-weight: 700;
-        color: #333;
-        margin-bottom: 10px;
-      }
-
-      .sidebar p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        font-weight: 700;
       }
 
       .footer .copyright {
@@ -243,25 +217,6 @@
         background-color: grey;
         color: whitesmoke;
         padding: 8px;
-      }
-
-      /* Clear */
-      .cf:before,
-      .cf:after {
-        content: " "; /* 1 */
-        display: table; /* 2 */
-      }
-
-      .cf:after {
-        clear: both;
-      }
-
-      /**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-      .cf {
-        *zoom: 1;
       }
     </style>
   </head>
@@ -277,57 +232,44 @@
         </div>
       </div>
       <div class="hero"></div>
+      <div class="content">
+        <h2>Judul Artikel</h2>
+        <p class="author">
+          Ditulis oleh <a href="#">Reza Kurniawan</a>, Pada 16 Februari 2023
+        </p>
 
-      <div class="content cf">
-        <div class="main">
-          <h2>Judul Artikel</h2>
-          <p class="author">
-            Ditulis oleh <a href="#">Reza Kurniawan</a>, Pada 16 Februari 2023
-          </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          architecto, ea corrupti ut deserunt cumque rerum corporis itaque
+          facilis. Temporibus magni, fugiat adipisci eius consequuntur autem ex
+          repellat sed obcaecati!
+        </p>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-            architecto, ea corrupti ut deserunt cumque rerum corporis itaque
-            facilis. Temporibus magni, fugiat adipisci eius consequuntur autem
-            ex repellat sed obcaecati!
-          </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+          alias, quidem quisquam hic, voluptatem reiciendis eaque doloribus quis
+          porro quibusdam, rerum nihil maxime modi laudantium numquam. Veniam,
+          amet. Magni nostrum possimus consectetur odio eius eaque consequatur
+          nisi suscipit itaque! Animi, perspiciatis ut consectetur mollitia
+          saepe omnis perferendis quae voluptatibus rerum suscipit voluptas
+          commodi? Similique itaque rerum sequi minus in accusantium rem minima,
+          expedita quam voluptas esse dicta illo! Aliquid fuga, mollitia dolore
+          atque neque sapiente fugiat alias inventore est quaerat adipisci
+          tenetur maiores ratione, eum id, et suscipit itaque qui impedit ipsum
+          laborum animi culpa! Mollitia exercitationem aperiam ab qui!
+        </p>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-            alias, quidem quisquam hic, voluptatem reiciendis eaque doloribus
-            quis porro quibusdam, rerum nihil maxime modi laudantium numquam.
-            Veniam, amet. Magni nostrum possimus consectetur odio eius eaque
-            consequatur nisi suscipit itaque! Animi, perspiciatis ut consectetur
-            mollitia saepe omnis perferendis quae voluptatibus rerum suscipit
-            voluptas commodi? Similique itaque rerum sequi minus in accusantium
-            rem minima, expedita quam voluptas esse dicta illo! Aliquid fuga,
-            mollitia dolore atque neque sapiente fugiat alias inventore est
-            quaerat adipisci tenetur maiores ratione, eum id, et suscipit itaque
-            qui impedit ipsum laborum animi culpa! Mollitia exercitationem
-            aperiam ab qui!
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-            impedit distinctio? Nisi ipsa ullam quod quis deserunt aspernatur
-            soluta repellendus aliquam. Sed nesciunt est eum, rerum soluta
-            officiis dolor doloremque quam corporis molestiae dignissimos iste
-            laborum, possimus officia debitis enim eligendi illo nostrum quae!
-            Obcaecati, quisquam maiores velit atque debitis ratione illo
-            recusandae illum. Aut odio suscipit iusto consequuntur dignissimos
-            dolor ullam. Minima, repellendus quam quos dolor corrupti odit
-            tempore laudantium. Delectus perferendis nesciunt magnam, non
-            possimus est blanditiis mollitia.
-          </p>
-        </div>
-        <div class="sidebar cf">
-          <h3>Tentang Penulis</h3>
-          <img src="img/nikita.jpg" alt="main" width="100px" height="100px" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magni
-            quam nulla incidunt esse quo a facilis itaque ea quod?
-          </p>
-        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, impedit
+          distinctio? Nisi ipsa ullam quod quis deserunt aspernatur soluta
+          repellendus aliquam. Sed nesciunt est eum, rerum soluta officiis dolor
+          doloremque quam corporis molestiae dignissimos iste laborum, possimus
+          officia debitis enim eligendi illo nostrum quae! Obcaecati, quisquam
+          maiores velit atque debitis ratione illo recusandae illum. Aut odio
+          suscipit iusto consequuntur dignissimos dolor ullam. Minima,
+          repellendus quam quos dolor corrupti odit tempore laudantium. Delectus
+          perferendis nesciunt magnam, non possimus est blanditiis mollitia.
+        </p>
       </div>
 
       <div class="footer">
