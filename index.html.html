@@ -147,65 +147,36 @@
         background-image: url(img/stardust.png);
       }
 
-      .top-bar {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 50px;
-        opacity: 50%;
-        background-color: #333;
-        border-bottom: 3px solid #333;
-        z-index: 9999;
-      }
-
-      .top-bar .navbar {
-        display: inline-block;
-        margin-top: 15px;
-        text-transform: capitalize;
-      }
-
-      .top-bar .navbar a {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        margin: 0 150px;
-      }
-
-      .top-bar .navbar a:hover {
-        color: purple;
-      }
-
       .container {
         width: 960px;
-        margin: 30px auto;
+        margin: auto;
         background-color: whitesmoke;
-        position: relative;
-      }
-
-      .linkedin {
-        width: 50px;
-        height: 50px;
-        background-image: url(img/linkedinn.png);
-        background-repeat: no-repeat;
-        display: inline-block;
-        text-indent: -9999px;
-        position: absolute;
-        top: 2px;
-        right: 2px;
       }
 
       .header {
-        margin-top: 60px;
-        padding: 30px;
+        padding: 20px;
       }
 
       .header .judul {
-        margin-top: 10px;
         text-align: center;
         font-weight: 700;
         font-size: 40px;
+      }
+
+      .header .navbar {
+        display: inline-block;
+        margin-top: 20px;
+        text-transform: capitalize;
+      }
+
+      .header .navbar a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 90px;
+      }
+
+      .header .navbar a:hover {
+        color: purple;
       }
 
       .hero {
@@ -213,8 +184,8 @@
         background-size: cover;
         background-position: 0 -280px;
         background-image: url(img/developer.jpg);
-        border-top: 5px solid white;
-        border-bottom: 5px solid white;
+        border-top: 5px solid gray;
+        border-bottom: 5px solid gray;
       }
 
       .main {
@@ -295,24 +266,15 @@
     </style>
   </head>
   <body>
-    <div class="top-bar">
-      <div class="navbar">
-        <a href="#">home</a>
-        <a href="#">work</a>
-        <a href="#">about</a>
-        <a href="#">contact</a>
-      </div>
-    </div>
-
     <div class="container">
-      <a
-        href="https://www.linkedin.com/in/rezakrn21/"
-        class="linkedin"
-        target="_blank"
-        >Twitter</a
-      >
       <div class="header">
         <h1 class="judul">MyWebsite</h1>
+        <div class="navbar">
+          <a href="#">home</a>
+          <a href="#">work</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+        </div>
       </div>
       <div class="hero"></div>
 
